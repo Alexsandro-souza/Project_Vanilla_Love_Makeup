@@ -12,6 +12,6 @@ const mainRouter = require('./Router/mainRouter')
 app.use('/api', mainRouter)
 
 
-app.listen(3000,()=>{
+app.listen(3333,()=>{
     console.log('Server funcionando!')
 })
