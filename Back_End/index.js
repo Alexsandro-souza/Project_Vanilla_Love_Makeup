@@ -11,6 +11,7 @@ mongo()
 const mainRouter = require('./Router/mainRouter')
 app.use('/api', mainRouter)
 
+
 app.listen(3000,()=>{
     console.log('Server funcionando!')
 })

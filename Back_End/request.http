@@ -36,6 +36,6 @@ Content-Type: application/json
 	"descrição": "Um pincel de maquiagem é um produto de maquiagem que é usado para aplicar a maquiagem.",
 	"preço": 20,
 	"estoque": 50,
-	"favorito": 0
+	"favorito": 10
 }
 	
