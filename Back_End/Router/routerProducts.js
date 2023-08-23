@@ -10,7 +10,7 @@ router.route('/products/:id').get((req, res)=>productsControllers.getById(req,re
 
 router.route('/category/:nameCategory').get((req, res)=>productsControllers.getByCategory(req,res))
 
-router.route('/products/delete/:id').get((req, res)=>productsControllers.deleteById(req,res))
+router.route('/products/delete/:id').delete((req, res)=>productsControllers.deleteById(req,res))
 
 router.route('/products/update/:id').put((req, res)=>productsControllers.updateService(req,res))
 
