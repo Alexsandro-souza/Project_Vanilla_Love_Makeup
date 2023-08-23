@@ -12,7 +12,7 @@ const mainRouter = require('./Router/mainRouter')
 app.use('/api', mainRouter)
 
 app.get('/test', (req, res)=>{
-    return res.json({msg : 'Funcionando'})
+    return res.send('Funcionando')
 })
 
 app.listen(3333,()=>{

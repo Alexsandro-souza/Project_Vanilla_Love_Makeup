@@ -58,6 +58,19 @@ const productsControllers = {
 			console.log(error);
 		}
 	},
+	getByCategory : async(req, res)=>{		
+		try {
+			const {nameCategory} = req.params;
+			const data = await products.find( { categoria: { $regex: new RegExp(nameCategory,'i')}} );
+			if(data.length ===0){
+				res.json({data, msg:"Categoria não existe"})
+			}
+			res.json({data, msg:"Categoria consultada com sucesso"})
+		} catch (error) {
+			console.log(error);
+		}
+
+	},
 	deleteById : async(req, res)=>{
 
 		try{ 
